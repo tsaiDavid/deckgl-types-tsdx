@@ -1,3 +1,16 @@
+# Reproduce Errors
+
+1. Ensure you have `yarn`
+2. After cloning this repo, run `yarn` (or `yarn install`) in project root
+3. (optional) - open text editor like VSCode and navigate to `src/index.tsx`
+4. Install both `react-map-gl` and its types:
+   - `yarn add react-map-gl`
+   - `yarn add @types/react-map-gl`
+
+Upon installing any packages also containing type defs, it appears that files moved by `indefinitely-typed` (`@danmarshall/deck-gl-typings` to corresponding dirs under `node_modules/@types`) are removed/deleted, leading to build issues or errors with an editor like VSCode.
+
+
+
 # TSDX React User Guide
 
 Congrats! You just saved yourself hours of work by bootstrapping this project with TSDX. Let’s get you oriented with what’s here and how to use it.
